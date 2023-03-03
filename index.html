@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recicla Game</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <i id="level" class="level">Nível: 0</i>
+    <i id="lives" class="lives">3 chances</i>
+    <section id="item" class="item">
+      <img id="item-img" />
+      <span id="item-label"></i>
+    </section>
+
+    <div class="timer show"><i id="timer-bar"></i></div>
+    <section id="bins" class="bins">
+      <div id="plastico" class="bin">
+        <i></i> <span class="label">Plástico</span>
+      </div>
+      <div id="papel" class="bin">
+        <i></i> <span class="label">Papel</span>
+      </div>
+      <div id="vidro" class="bin">
+        <i></i> <span class="label">Vidro</span>
+      </div>
+      <div id="organico" class="bin">
+        <i></i> <span class="label">Orgânico</span>
+      </div>
+      <div id="metal" class="bin">
+        <i></i> <span class="label">Metal</span>
+      </div>
+    </section>
+
+    <section id="init" class="init overlay show">
+      <h1>RECICLA GAME</h1>
+
+      <div class="info">
+        <p>Instruções:</p>
+        - Selecione a lata correta para reciclar o lixo.<br />
+        - Se for um <i>resíduo especial</i>, não selecione nenhuma!
+      </div>
+
+      <button class="start">INICIAR</button>
+      </div>
+    </section>
+
+    <section id="game-over" class="game-over overlay">
+      <h2>GAME OVER!</h2>
+
+      <div class="score">
+        Última partida: <span id="last-level">0</span>
+        <br>
+        Meu recorde: <span id="record">0</span>
+      </div>
+
+      <button class="start">REINICIAR</button>
+
+      <div class="info">
+        <p>Todos os direitos reservados:</p>
+        <div>Maria Eliete dos Santos Passarini - <i>52217679</i></div>
+        <div>Valdirene Rodrigues dos Santos Castro - <i>51812789</i></div>
+        <div>Ana Cristina Silva Sousa - <i>52217489</i></div>
+        <div>Cassia Afonso dos Santos Oliveira - <i>52217177</i></div>
+        <div>Yasmim Sousa Santos - <i>52217646</i></div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+<script type="module" src="./main.js"></script>
+
+</html>

@@ -1,0 +1,222 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0
+}
+
+.item,
+body,
+main {
+  display: flex
+}
+
+.info,
+.item span {
+  font-size: .8rem
+}
+
+.timer i,
+body,
+html {
+  height: 100%;
+  width: 100%
+}
+
+.level,
+.timer {
+  left: 0
+}
+
+.lives,
+.timer {
+  right: 0
+}
+
+.bin,
+.overlay {
+  text-align: center
+}
+
+.bin,
+button {
+  cursor: pointer
+}
+
+.bin span,
+.item span,
+button {
+  text-transform: uppercase
+}
+
+* {
+  font-family: 'Fjalla One', Roboto, sans-serif
+}
+
+body {
+  background: #181e24;
+  font-size: 1.1em;
+  overflow: hidden;
+  color: #ddd
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-style: italic
+}
+
+main {
+  flex-direction: column;
+  padding-top: 10px;
+  flex: 1
+}
+
+.item {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1
+}
+
+.item span {
+  margin-top: .5rem;
+  padding: .3rem .5rem;
+  background-color: #fffa;
+  color: #181e24;
+  border-radius: 5px
+}
+
+.bins {
+  height: 120px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 1fr)
+}
+
+.bin {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: stretch
+}
+
+.level,
+.lives {
+  font-weight: 700;
+  padding: 1rem;
+  position: absolute;
+  top: 0
+}
+
+.game-over,
+.overlay,
+.timer {
+  display: none
+}
+
+.bin i {
+  flex: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 50px;
+  width: 100%;
+  background-size: contain
+}
+
+#plastico {
+  background: #993631eb
+}
+
+#plastico i {
+  background-image: url(./assets/images/bin-plastico.png)
+}
+
+#metal {
+  background: #a7972af7
+}
+
+#metal i {
+  background-image: url(./assets/images/bin-metal.png)
+}
+
+#papel {
+  background: #306999eb
+}
+
+#papel i {
+  background-image: url(./assets/images/bin-papel.png)
+}
+
+#organico {
+  background: #64482d
+}
+
+#organico i {
+  background-image: url(./assets/images/bin-organico.png)
+}
+
+#vidro {
+  background: #4c8f5e
+}
+
+#vidro i {
+  background-image: url(./assets/images/bin-vidro.png)
+}
+
+.bin span {
+  font-size: .7rem;
+  margin-top: .8rem
+}
+
+.timer {
+  position: absolute;
+  background: rgba(255, 255, 255, .2);
+  top: 0;
+  margin: auto;
+  height: 5px;
+  box-sizing: border-box;
+  z-index: 100
+}
+
+.timer i {
+  display: block;
+  background-color: #03a9f4;
+  transform: scaleX(1);
+  transition: transform 3s
+}
+
+.overlay {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #222d;
+  z-index: 200
+}
+
+.game-over span {
+  line-height: 2rem;
+  font-weight: 100;
+  color: #45a0eb
+}
+
+button {
+  border: none;
+  background-color: #fffd;
+  padding: .5rem 1rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: #45a0eb
+}
+
+.show {
+  display: flex !important
+}
